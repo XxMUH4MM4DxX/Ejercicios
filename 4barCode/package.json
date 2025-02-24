@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "inquirer": "^12.4.2",
+    "qr-image": "^3.2.0"
+  },
+  "name": "4barcode",
+  "version": "1.0.0",
+  "description": "Generar imagen codigo qr de enlace git",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  
+  "scripts": {
+    "test": "DAMM"
+  },
+  "author": "Diego Morales",
+  "license": "ISC"
+}
