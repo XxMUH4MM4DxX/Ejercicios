@@ -1,0 +1,103 @@
+/* --------------------------------------------------
+   Estilos Generales
+   -------------------------------------------------- */
+
+/* Reseteo y Box Model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+  background-color: #f8f9fa; /* Gris claro más suave */
+  color: #333; /* Texto más legible */
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+/* --------------------------------------------------
+   Encabezado
+   -------------------------------------------------- */
+
+header {
+  background-color: #2c3e50; /* Azul oscuro más elegante */
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem; /* Espaciado con unidades relativas */
+}
+
+header h1 {
+  font-size: 2rem; /* Tamaño de fuente relativo */
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------
+   Navegación
+   -------------------------------------------------- */
+
+nav {
+  background-color: #34495e; /* Azul oscuro similar al header */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* Espaciado con unidades relativas */
+}
+
+nav ul li a {
+  display: block; /* Permite padding y margin en el enlace */
+  background-color: #4a6572; /* Tono más claro para los botones */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600; /* Peso de fuente más ligero */
+  padding: 0.75rem 1.25rem; /* Espaciado con unidades relativas */
+  border-radius: 0.25rem; /* Bordes redondeados más sutiles */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+nav ul li a:hover {
+  background-color: #5c7a8a; /* Cambio de color al pasar el ratón */
+}
+
+/* --------------------------------------------------
+   Contenido Principal
+   -------------------------------------------------- */
+
+main {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px; /* Limita el ancho del contenido */
+  margin: 0 auto; /* Centra el contenido */
+}
+
+main h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  margin-bottom: 1.5rem;
+}
+
+/* --------------------------------------------------
+   Responsividad
+   -------------------------------------------------- */
+
+@media (max-width: 768px) { /* Punto de quiebre más común */
+  nav ul {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+}
